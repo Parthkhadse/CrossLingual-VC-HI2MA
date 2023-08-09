@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      End-to-End Cross-Lingual Voice Conversion using CycleGAN for Low Resource
+      Indian Languages
+    </title>
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/icon.jpg" />
+      <h1>Cross Lingual VC for Low Resource Indian Languages</h1>
+    </nav>
+    <div class="image_title">
+      <img src="./assets/main.jpg" alt="image" />
+      <div class="image_text">
+        End-to-End Cross-Lingual Voice Conversion using CycleGAN for Low
+        Resource Indian Languages
+        <div class="small_text">
+          The objective is to develop a End-to_End Voice conversion system for
+          voice conversion between Hindi speaker's voice to Marathi speaker's
+          voice and vice versa
+        </div>
+      </div>
+    </div>
+    <div class="main_start">
+      <div class="experimental_details">
+        <h1>Experimental details</h1>
+        <ul>
+          <li>
+            For the Training and Testing of the Model IndicTTS Dataset was used.
+          </li>
+          <li>
+            One pair of Male and Female speakers was chosen for both Hindi and
+            Marathi Languages. For each speaker approximately 20 minutes of data
+            was used for Training purpose
+          </li>
+          <li>
+            No Neural vocoders were used. The feature Extraction and speech
+            re-synthesis was done using the WORLD vocoder.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="converted_samples">
+          <h1>Converted Samples : Hindi To Marathi</h1>
+        </div>
+        <div class="segment">
+          <h1>Male to Male VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/hima_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/mama_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mama_2.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mama_5.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mama_6.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Male to Female VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/hima_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/mafm_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mafm_2.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mafm_5.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hima2mafm_6.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Female to Male VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/hifm_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/mama_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mama_1.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mama_3.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mama_5.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Female to Female VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/hifm_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/mafm_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hima_5.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mafm_6.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mafm_7.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="converted_samples">
+          <h1>Converted Samples : Marathi To Hindi</h1>
+        </div>
+        <div class="segment">
+          <h1>Male to Male VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/mama_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/hima_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hima_1.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hima_2.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hima_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Male to Female VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/mama_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/hifm_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hifm_1.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hifm_14.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mama2hifm_15.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Female to Male VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/mafm_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/hima_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hima_5.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hima_6.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hima_7.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="segment">
+          <h1>Female to Female VC</h1>
+          <div class="table">
+            <div>
+              <h3>Source Speaker</h3>
+              <audio controls>
+                <source src="./assets/mafm_1.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Target Speaker</h3>
+              <audio controls>
+                <source src="./assets/hifm_3.wav" type="audio/wav" />
+              </audio>
+            </div>
+            <div>
+              <h3>Converted</h3>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hifm_5.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_mafm2hifm_6.wav" type="audio/wav" />
+              </audio>
+              <audio controls>
+                <source src="./assets/1000_ep_hifm2mafm_7.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        h3 {
+          text-align: center;
+          margin: 2%;
+          font-size: 1.5em;
+        }
+      </style>
+      <h3>Contact</h3>
+      <h3>Parth Khadse | parthkhadse@kgpian.iitkgp.ac.in</h3>
+    </div>
+  </body>
+</html>
